@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <title>Sidebar Menu with sub-menu  -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        body {
+            background-image: url();
+            background-color: rgb(252, 252, 252);
+            background-blend-mode: screen;
+            font-family: calibri;
+        }
+
+        #d {
+            margin-left: 150px;
+            width: 700px;
+            height: 450px;
+            background-color: rgba(0, 0, 0);
+            opacity: 1;
+            box-shadow: 15px 15px 10px rgb(6, 223, 212);
+            border-radius: 10px;
+            position: relative;
+            top: 100px;
+            left: 350px;
+        }
+
+        #d h1 {
+            color: white;
+            position: relative;
+            left: 40px;
+            top: 50px;
+        }
+
+        #d p {
+            color: white;
+            position: relative;
+            left: 40px;
+            top: 70px;
+            width: 80%;
+            font-size: 20px;
+        }
+
+        #d li {
+            position: relative;
+            color: white;
+            left: 40px;
+            top: 70px;
+            width: 80%;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!-- <div class="btn">
+      <span class="fas fa-bars"></span>
+    </div> -->
+        <nav class="sidebar">
+            <div class="text">
+                JAVA</div>
+            <ul>
+                <li class="active"><a href="#">Dashboard</a></li>
+                <li>
+                    <a href="#" class="arr-btn">Arrays
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="arr-show">
+                        <li><a href="array1d.html">1-D Array</a></li>
+                        <li><a href="array2d.html">2-D Array</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="inp-btn">Input
+                        <span class="fas fa-caret-down second"></span>
+                    </a>
+                    <ul class="inp-show">
+                        <li><a href="command-input.html">Command-line</a></li>
+                        <li><a href="scanner-input.html">Scanner-Class</a></li>
+                    </ul>
+                </li>
+    </header>
+    <!-- <li><a href="#">Portfolio</a></li>
+<li><a href="#">Overview</a></li>
+<li><a href="#">Shortcuts</a></li>
+<li><a href="#">Feedback</a></li> -->
+    </ul>
+    </nav>
+    <script>
+        // $('.btn').click(function(){
+        //   $(this).toggleClass("click");
+        //   $('.sidebar').toggleClass("show");
+        // });
+        $('.arr-btn').click(function () {
+            $('nav ul .arr-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.inp-btn').click(function () {
+            $('nav ul .inp-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+
+    <!-- content............................................. -->
+    <div id="d">
+        <h1>Taking input in java</h1><br>
+        <p>input through Scanner class
+        </p>
+    </div>
+
+
+
+    <main>
+        <!-- <h3>Hello</h3>
+          <h1> i am Shivank Singh</h1>
+          <h2>web developer</h2> -->
+
+
+        <!-- <div class="content">
+            <div class="header">WT-Project</div>
+            <p>KiiT University</p>
+          </div> -->
+
+        <!-- button   starts.......................................................... -->
+        <!-- <div class="container">
+            <a href="#" class="btn1">Array 1D</a>
+            <br>
+            <a href="#" class="btn2">Array 2D</a>
+            <br>
+            <a href="#" class="btn3">Input (Scanner)</a>
+            <br>
+            <a href="#" class="btn4">Input (Command Line)</a>
+          </div>
+          button ends.............................................. -->
+
+        <!-- </div>
+          <a href="#" class="btn1">About</a>
+          <a href="#" class="btn2">Home</a>
+        </div> -->
+    </main>
+</body>
+
+</html>
