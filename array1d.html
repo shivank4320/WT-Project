@@ -17,7 +17,7 @@
       font-family: calibri;
     }
 
-    #d1{
+    #d1 {
       margin-left: 150px;
       /* padding-top: 50px; */
       /* margin-top: 50px; */
@@ -31,12 +31,13 @@
       top: 50px;
       left: 230px;
     }
+
     #d2 {
       margin-left: 150px;
       /* padding-top: 50px; */
       /* margin-top: 50px; */
       width: 700px;
-      height: 270px;
+      height: 220px;
       background-color: rgba(0, 0, 0);
       opacity: 1;
       box-shadow: 15px 15px 10px rgb(6, 223, 212);
@@ -51,21 +52,7 @@
       /* padding-top: 50px; */
       /* margin-top: 50px; */
       width: 700px;
-      height: 220px;
-      background-color: rgba(0, 0, 0);
-      opacity: 1;
-      box-shadow: 15px 15px 10px rgb(6, 223, 212);
-      border-radius: 10px;
-      position: relative;
-      top: 50px;
-      left: 350px;
-    }
-    #d4 {
-      margin-left: 150px;
-      /* padding-top: 50px; */
-      /* margin-top: 50px; */
-      width: 700px;
-      height: 370px;
+      height: 190px;
       background-color: rgba(0, 0, 0);
       opacity: 1;
       box-shadow: 15px 15px 10px rgb(6, 223, 212);
@@ -75,7 +62,73 @@
       left: 350px;
     }
 
-    #d1 h1, #d2 h1, #d3 h1, #d4 h1{
+    #d4 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 420px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+
+    #d5 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 550px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+
+    #d6 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 500px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+
+    #d7 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 610px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+
+    #d1 h1,
+    #d2 h1,
+    #d3 h1,
+    #d4 h1,
+    #d5 h1,
+    #d6 h1,
+    #d7 h1 {
       /* margin-top: 50px; */
       color: white;
       position: relative;
@@ -83,22 +136,35 @@
       top: 30px;
     }
 
-    #d1 p, #d2 p, #d3 p, #d4 p{
+    #d1 p,
+    #d2 p,
+    #d3 p,
+    #d4 p,
+    #d5 p,
+    #d6 p,
+    #d7 p {
       color: white;
       position: relative;
       left: 40px;
       top: 70px;
       width: 80%;
-      font-size: 20px;
+      font-size: 17px;
     }
 
-    #d1 li, #d2 li , #d3 li, #d4 li{
+    #d1 li,
+    #d2 li,
+    #d3 li,
+    #d4 li,
+    #d5 li,
+    #d6 li,
+    #d7 li {
       position: relative;
       color: white;
+      padding-top: 11px;
       left: 95px;
-      top: 40px;
+      top: 30px;
       width: 80%;
-      font-size: 17px;
+      font-size: 15px;
     }
   </style>
 </head>
@@ -162,20 +228,20 @@
     <h1>1-D Array Introduction</h1><br>
     <p>
       Array is the collection of similar type of data having contiguous
-        memory location and are referred to by a comman name.<br><br>
-      following are some important points about Java arrays :  <br><br><br>
-<ul>
-<li>In Java all arrays are dynamically allocated.</li>
-<li>Since arrays are objects in Java, we can find their length using the object property length. This is different from C/C++ where we find length using sizeof.</li>
-<li>A Java array variable can also be declared like other variables with [] after the data type.</li>
-<li>The variables in the array are ordered and each have an index beginning from 0.</li>
-<li>Java array can be also be used as a static field, a local variable or a method parameter.</li>
-<li>The size of an array must be specified by an int or short value and not long.</li>
-<li>The direct superclass of an array type is Object.</li>
-<li>Array is the reference variable of proxy class. The proxy
-  class is a class created by JVM at run time. We can get the name of the proxy
-  class of an array by using getClass().getName() method. </li>
-<li>Every array type implements the interfaces Cloneable and java.io.Serializable.</li>
+      memory location and are referred to by a comman name.<br><br>
+      following are some important points about Java arrays : <br><br><br>
+    <ul>
+      <li>In Java all arrays are dynamically allocated.</li>
+      <li>Since arrays are objects in Java, we can find their length using the object property length. </li>
+      <li>A Java array variable can also be declared like other variables with [] after the data type.</li>
+      <li>The variables in the array are ordered and each have an index beginning from 0.</li>
+      <li>Java array can be also be used as a static field, a local variable or a method parameter.</li>
+      <li>The size of an array must be specified by an int or short value and not long.</li>
+      <li>The direct superclass of an array type is Object.</li>
+      <li>Array is the reference variable of proxy class. The proxy
+        class is a class created by JVM at run time. We can get the name of the proxy
+        class of an array by using getClass().getName() method. </li>
+      <li>Every array type implements the interfaces Cloneable and java.io.Serializable.</li>
       <!-- <li>Array is the collection of similar type of data having contiguous
         memory location. </li>
       <li>Due to contiguous memory location the performance becomes
@@ -190,51 +256,102 @@
 
     </p>
   </div>
+
   <br>
   <br>
 
   <div id="d2">
-    <h1>Advantages : </h1><br>
+    <h1>Advantages : </h1>
     <p>
     <ul>
-      <li><strong>Code Optimization:</strong>  It makes the code optimized, we can retrieve or sort the data efficiently. </li>
+      <li><strong>Code Optimization:</strong> It makes the code optimized, we can retrieve or sort the data efficiently.
+      </li>
       <li><strong>Random access:</strong> We can get any data located at an index position</li>
-      
     </ul>
-
-    </p>
-    </div>
-    <br>
-    <br>
-
-  <div id="d3">
-    <h1>Disdvantages : </h1><br>
-    <p>
-    <ul>
-      <li><strong>Size Limit : </strong> We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically. </li>
-      
-      
-    </ul>
-
     </p>
   </div>
+
+  <br>
+  <br>
+
+  <div id="d3">
+    <h1>Disdvantages : </h1>
+    <p>
+    <ul>
+      <li><strong>Size Limit : </strong> We can store only the fixed size of elements in the array. It doesn't grow its
+        size at runtime. To solve this problem, collection framework is used in Java which grows automatically. </li>
+    </ul>
+    </p>
+  </div>
+
   <br>
   <br>
 
   <div id="d4">
-    <h1>How to declare an array ?  </h1><br>
+    <h1>How to declare an array ? </h1>
     <p>
-      dataType[] arrayName;<br> 
-      dataType []arrName;<br>
-      dataType arrName[];<br>
-
-      <ul><br><br>
-        <li>dataType - it can be primitive data types like int, char, double, byte, etc. or Java objects</li>
-        <li>arrayName - it is an identifier</li>
-      </ul>
+      data_type[] array_name;<br>
+      data_type []arr_name;<br>
+      data_type arr_name[];<br>
+    <ul><br><br>
+      <li>data_type - it can be primitive data types like int, char, double, byte, etc. or Java objects</li>
+      <li>array_name - it is an identifier</li>
+    </ul>
+    </p>
+    <p> example : <br><br><br>
+      <li>int[] arr ;</li>
     </p>
   </div>
+  <br>
+  <br>
 
+  <div id="d5">
+    <h1>how many elements can array this hold?</h1>
+    <p>
+      Array is created or instantiated using new keyword.<br>
+      When an array is declared, only a reference of array is created.<br> 
+      To actually create or allocate memory to array : <br>
+      <br><br>
+    <ul>
+      <li>
+        array_name  =  new  data_type [ size ] ;
+      </li>
+    </ul>
+    </p>
+    <p>To define the number of elements that an array can hold, we have to allocate memory for the array in
+      Java.<br><br>
+      For example : <br><br><br>
+    <ul>
+      <li>
+        <pre>int[] arr ;         <i>//declare an array</i></pre><br>
+      </li>
+      <li>
+        <pre>arr = new arr[10] ;         <i>//allocate memory</i></pre>
+      </li>
+    </ul>
+    </p>
+  </div>
+  <br>
+  <br>
+
+  <div id="d6">
+    <h1>How to Initialize Arrays in Java? </h1>
+    <p>In Java, we can initialize arrays during declaration.<br>
+      For example : <br><br>
+      <small> <i> //declare and initialize and array </i> </small><br><br>
+      int [] arr = { 40, 55, 63, 17, 22, 68, 89, 97, 89 } ;<br><br>
+      <img src="arrdec.png" alt="arr-image">
+    </p>
+  </div>
+  <br>
+  <br>
+
+  <div id="d7">
+    <h1>Typical array processing codes </h1>
+    <p>
+      <img src="arraycodes2.png" alt="typical array processing codes">
+    </p>
+  </div>
 
   <main>
     <!-- <h3>Hello</h3>
