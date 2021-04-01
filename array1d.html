@@ -17,27 +17,73 @@
       font-family: calibri;
     }
 
-    #d {
+    #d1{
       margin-left: 150px;
-      width: 700px;
-      height: 450px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 850px;
+      height: 750px;
       background-color: rgba(0, 0, 0);
       opacity: 1;
       box-shadow: 15px 15px 10px rgb(6, 223, 212);
       border-radius: 10px;
       position: relative;
-      top: 100px;
+      top: 50px;
+      left: 230px;
+    }
+    #d2 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 270px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
       left: 350px;
     }
 
-    #d h1 {
+    #d3 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 220px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+    #d4 {
+      margin-left: 150px;
+      /* padding-top: 50px; */
+      /* margin-top: 50px; */
+      width: 700px;
+      height: 370px;
+      background-color: rgba(0, 0, 0);
+      opacity: 1;
+      box-shadow: 15px 15px 10px rgb(6, 223, 212);
+      border-radius: 10px;
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+
+    #d1 h1, #d2 h1, #d3 h1, #d4 h1{
+      /* margin-top: 50px; */
       color: white;
       position: relative;
       left: 40px;
-      top: 50px;
+      top: 30px;
     }
 
-    #d p {
+    #d1 p, #d2 p, #d3 p, #d4 p{
       color: white;
       position: relative;
       left: 40px;
@@ -46,11 +92,11 @@
       font-size: 20px;
     }
 
-    #d li {
+    #d1 li, #d2 li , #d3 li, #d4 li{
       position: relative;
       color: white;
-      left: 40px;
-      top: 70px;
+      left: 95px;
+      top: 40px;
       width: 80%;
       font-size: 17px;
     }
@@ -112,11 +158,25 @@
   </script>
 
   <!-- content .......................................... -->
-  <div id="d">
+  <div id="d1">
     <h1>1-D Array Introduction</h1><br>
     <p>
-    <ul>
-      <li>Array is the collection of similar type of data having contiguous
+      Array is the collection of similar type of data having contiguous
+        memory location and are referred to by a comman name.<br><br>
+      following are some important points about Java arrays :  <br><br><br>
+<ul>
+<li>In Java all arrays are dynamically allocated.</li>
+<li>Since arrays are objects in Java, we can find their length using the object property length. This is different from C/C++ where we find length using sizeof.</li>
+<li>A Java array variable can also be declared like other variables with [] after the data type.</li>
+<li>The variables in the array are ordered and each have an index beginning from 0.</li>
+<li>Java array can be also be used as a static field, a local variable or a method parameter.</li>
+<li>The size of an array must be specified by an int or short value and not long.</li>
+<li>The direct superclass of an array type is Object.</li>
+<li>Array is the reference variable of proxy class. The proxy
+  class is a class created by JVM at run time. We can get the name of the proxy
+  class of an array by using getClass().getName() method. </li>
+<li>Every array type implements the interfaces Cloneable and java.io.Serializable.</li>
+      <!-- <li>Array is the collection of similar type of data having contiguous
         memory location. </li>
       <li>Due to contiguous memory location the performance becomes
         fast. </li>
@@ -125,12 +185,55 @@
       <li>Array is represented by an object</li>
       <li>Array is the reference variable of proxy class. The proxy
         class is a class created by JVM at run time. We can get the name of the proxy
-        class of an array by using getClass().getName() method. </li>
+        class of an array by using getClass().getName() method. </li> -->
     </ul>
 
     </p>
   </div>
+  <br>
+  <br>
 
+  <div id="d2">
+    <h1>Advantages : </h1><br>
+    <p>
+    <ul>
+      <li><strong>Code Optimization:</strong>  It makes the code optimized, we can retrieve or sort the data efficiently. </li>
+      <li><strong>Random access:</strong> We can get any data located at an index position</li>
+      
+    </ul>
+
+    </p>
+    </div>
+    <br>
+    <br>
+
+  <div id="d3">
+    <h1>Disdvantages : </h1><br>
+    <p>
+    <ul>
+      <li><strong>Size Limit : </strong> We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically. </li>
+      
+      
+    </ul>
+
+    </p>
+  </div>
+  <br>
+  <br>
+
+  <div id="d4">
+    <h1>How to declare an array ?  </h1><br>
+    <p>
+      dataType[] arrayName;<br> 
+      dataType []arrName;<br>
+      dataType arrName[];<br>
+
+      <ul><br><br>
+        <li>dataType - it can be primitive data types like int, char, double, byte, etc. or Java objects</li>
+        <li>arrayName - it is an identifier</li>
+      </ul>
+    </p>
+  </div>
 
 
   <main>
