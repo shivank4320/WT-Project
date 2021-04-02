@@ -17,10 +17,9 @@
             font-family: calibri;
         }
 
-        #d {
+        #d1, #d2, #d3, #d4, #d5, #d6, #d7 {
             margin-left: 150px;
             width: 700px;
-            height: 450px;
             background-color: rgba(0, 0, 0);
             opacity: 1;
             box-shadow: 15px 15px 10px rgb(6, 223, 212);
@@ -29,30 +28,47 @@
             top: 100px;
             left: 350px;
         }
-
-        #d h1 {
+        #d1{
+            height: 220px;
+        }
+        #d2{
+            height: 720px;
+        }
+        #d3{
+            height: 450px;
+        }
+        #d4{
+            height: 450px;
+        }
+        #d5{
+            height: 450px;
+        }
+        #d6{
+            height: 450px;
+        }
+        #d1 h1, #d2 h1, #d3 h1, #d4 h1, #d5 h1, #d6 h1, #d7 h1{
             color: white;
             position: relative;
             left: 40px;
             top: 50px;
         }
 
-        #d p {
+        #d1 p, #d2 p, #d3 p, #d4 p, #d5 p, #d6 p, #d7 p {
             color: white;
             position: relative;
-            left: 40px;
-            top: 70px;
-            width: 80%;
-            font-size: 20px;
-        }
-
-        #d li {
-            position: relative;
-            color: white;
             left: 40px;
             top: 70px;
             width: 80%;
             font-size: 17px;
+        }
+
+        #d1 li, #d2 li, #d3 li, #d4 li, #d5 li, #d6 li, #d7 li  {
+            position: relative;
+            color: white;
+            left: 95px;
+            top: 30px;
+            width: 80%;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -112,8 +128,56 @@
     </script>
 
     <!-- content .................................................. -->
-    <div id="d">
-        <h1>2-D Array Introduction</h1><br>
+    <div id="d1">
+        <h1>java Multidimensional Arrays</h1><br>
+        <p><ul>
+            <li>A multidimensional array is an array of arrays.</li>
+             <li>Each element of a multidimensional array is an array itself.</li>
+            <li>The 2D array is organized as matrices which can be represented as the collection of rows and columns.</li>
+        </ul>
+        </p>
+    </div>
+    <br><br>
+
+    <div id="d2">
+        <h1>How to declare 2D Array ?</h1>
+        <p>The syntax of declaring two dimensional array is very much similar to that of a one dimensional array. <br>
+           <br><small>data_type [ ] [ ]  array_name  =  new  int [ size1 ] [ size2 ] ; </small>  
+        </p>
+        <p>
+            exmaple : <br><br><br>
+            <ul>
+                <li>
+                    int [][] arr = new int[3][4] ;
+                </li>
+            </ul>
+        </p>
+        <p>Here, we have created a multidimensional array named arr. <br>
+             It is a 2-dimensional array, that can hold a maximum of 12 elements,</p><br><br><br><br>
+             <img src="images\arr-2d-img\arr2d.png" alt="2d-arr-img" style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 200px;">
+             <li>Remember, Java uses zero-based indexing, that is, indexing of arrays in Java starts with 0 and not 1.</li>
+    </div><br><br>
+    
+    <div id="d3">
+        <h1>How to initialize a 2d array in Java?</h1><br><br>
+        <ul><li>Initialization of 2D array </li>
+        <li>int [ ] [ ] a = { { 1 , 2 , 3 }, { 4 , 5 , 6 , 9 } , { 7 }  } ;</li></ul>
+         <br><br><br>
+         <img src="images\arr-2d-img\arr2dini.png" alt="2d-array-ini-img"  style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 200px;">
+    </div><br><br>
+    
+    <div id="d4">
+        <h1>How do we access data in a 2D array?</h1>
+        <p>Elements of 2D arrays can be random accessed. <br>
+            Similar to one dimensional arrays, we can access the individual cells in a 2D array by using the indices of the cells. <br>
+            There are two indices attached to a particular cell, one is its row number while the other is its column number.
+
+
+        </p>
+    </div><br><br>
+    
+    <div id="d5">
+        <h1>java Multidimensional Arrays</h1>
         <p>
 
 
