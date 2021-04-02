@@ -17,10 +17,9 @@
             font-family: calibri;
         }
 
-        #d {
+        #d1, #d2, #d3, #d4, #d5, #d6 , #d44{
             margin-left: 150px;
             width: 700px;
-            height: 450px;
             background-color: rgba(0, 0, 0);
             opacity: 1;
             box-shadow: 15px 15px 10px rgb(6, 223, 212);
@@ -29,30 +28,53 @@
             top: 100px;
             left: 350px;
         }
+        #d1{
+            height: 300px;
+        }
+        #d2{
+            height: 460px;
+        }
+        #d3{
+            height: 400px;
+        }
 
-        #d h1 {
+        #d4{
+            height: 450px;
+        }
+
+        #d44{
+            height: 400px;
+        }
+        #d5{
+            height: 550px;
+        }
+        #d6{
+            height: 415px;
+        }
+
+        #d1 h1, #d2 h1, #d3 h1, #d4 h1, #d44 h1, #d5 h1, #d6 h1 {
             color: white;
             position: relative;
             left: 40px;
             top: 50px;
         }
 
-        #d p {
+        #d1 p, #d2 p, #d3 p, #d4 p,#d44 p,  #d5 p, #d6 p {
             color: white;
             position: relative;
             left: 40px;
             top: 70px;
             width: 80%;
-            font-size: 20px;
+            font-size: 16px;
         }
 
-        #d li {
+        #d1 li, #d2 li, #d3 li, #d4 li,#d44 li, #d5 li, #d6 li {
             position: relative;
             color: white;
-            left: 40px;
-            top: 70px;
+            left: 95px;
+            top: 30px;
             width: 80%;
-            font-size: 17px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -113,14 +135,100 @@
 
 
     <!-- content............................................. -->
-    <div id="d">
-        <h1>Taking input in java</h1><br>
-        <p>input through Scanner class
+    <div id="d1">
+        <h1>Java Input</h1><br>
+        <p>Java provides different ways to get input from the user.<br><br>
+            Using the object of Scanner Class is probably the most preferred method to take input.<br>
+            It is the easiest way to read input in a Java program.
+
         </p>
     </div>
+    <br>
+    <br>
 
+    <div id="d2">
+        <h1>Scanner Class in Java</h1>
+        <p> The main purpose of the Scanner class is to parse primitive types and strings using regular expressions.<br>
+            Scanner class in Java is found in the java.util package.<br><br>
+            
+            Java provides various ways to read input from the keyboard, the java.util.Scanner class is one of them.<br><br>
+            The Java Scanner class breaks the input into tokens using a delimiter which is whitespace by default.
+            It provides many methods to read and parse various primitive values
+            </ul> <br><br><br>
+            <ul>
+                <li>Convenient methods for parsing primitives (nextInt(), nextFloat(), …) from the tokenized input.
+                <li>Regular expressions can be used to find tokens.</li><br><br>
+                </ul>
+        </p>
+    </div>
+    <br>
+    <br>
 
+    <div id="d3">
+        <h1>Import Scanner Class</h1>
+        <p>As we can see from the above example, we need to import the java.util.<br>
+            Scanner package before we can use the Scanner class.<br><br><br>
+            <ul>
+                <li><pre>import java . util . Scanner ;</pre></li>
+            </ul><br><br>
+            <img src="images\scannerpkg.jpg" alt="scanner-pkg" style="display: block; margin-left: 90px; margin-right: auto;"><br><br>
+        </p>
+    </div>
+    <br>
+    <br>
 
+    <div id="d4">
+        <h1>Create a Scanner class object</h1><br><br>
+        <p>
+            <ul>
+                <li><pre>Scanner  sc  =  new  Scanner ( InputStream  input ) ;       <small><i>// read input from the input stream </i></small></pre></li><br>
+                
+                <li><pre>Scanner  sc  =  new  Scanner ( File  file ) ;          <small><i>// read input from files </i></small></pre> </li><br>     
+                    
+                <li> <pre>Scanner  sc  =  new  Scanner ( String  str ) ;          <small><i> // read input from a string</i></small></pre></li><br>
+            </ul><br><br>
+            <img src="images\scannerimg.jpg" alt="scanner-object-creating" style="display: block; margin-left: 90px; margin-right: auto;">
+        </p>
+    </div>
+    <br>
+    <br>
+
+    <div id="d44">
+        <h1>Scanner Class Constructors</h1>
+        <p>
+            <img src="images\scannerconst.png" alt="scanner class constructors" style="display: block; margin-left: -15px; margin-right: auto;">
+        </p>
+    </div>
+    <br>
+    <br>
+
+    <div id="d5">
+        <h1>Java Scanner Methods</h1><br><br>
+        <p>The Scanner class provides various methods that allow us to read inputs of different types.<br>
+        <br>
+        <img src="images\scmethods.png" alt="scanner methods images" style="display: block; margin-left: auto; margin-right: auto;"></p>
+    </div>
+    <br>
+    <br>
+
+    
+    <div id="d6">
+        <h1>Working of java Scanner</h1>
+        <p>The Scanner class reads an entire line and divides the line into tokens.<br>
+            Tokens are small elements that have some meaning to the Java compiler.
+            For example : <br><br>
+            Suppose there is an input string : <br><br><br>
+            <ul>
+           <li>He is 22 </li></ul>
+        </p>
+        <p> In this case, the scanner object will read the entire line and divides the string into tokens:
+             "He", "is" and "22". The object then iterates over each token and reads each token
+              using its different methods . <br>
+              <br><br>
+              <ul style="list-style-type: none;">
+              <li ><bold>note : </bold> By default, whitespace is used to divide tokens.</li>
+                </ul>
+            </p></div>
     <main>
         <!-- <h3>Hello</h3>
           <h1> i am Shivank Singh</h1>
