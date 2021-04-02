@@ -17,7 +17,7 @@
         font-family: sans-serif;
    }
   
-    .homeimg {
+    .home {
       height: 100vh;
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/Javahome.webp);
       background-position: center;
@@ -64,16 +64,76 @@ background-color: #fff;
 background-image: none;
 box-shadow: none;
 }
+
+
+
+.vertical-bar{
+	height: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	position: absolute;
+
+}
+
+.search-icon{
+	height: 60%;
+	width: 80px;
+}
+
+.search-icon .fa{
+	margin: 45px 23px;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.social-icon{
+	height: 35%;
+	width: 80px;
+	background: rgb(0, 255, 255);
+	text-align: center;
+	padding-top: 27%;
+	bottom: 0;
+	position: absolute;
+	text-decoration: none;
+}
+
+.social-icon .fa{
+	margin:15px 23px;
+	display: block;
+	padding:8px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
   </style>
 </head>
 
 <body>
-  <div class="homeimg">
+  <div class="home">
     <div class="nav-bar">
-			<div class="nav-logo">
+			<!-- <div class="nav-logo">
 				<img src="images\kiitlogonew.png">
-			</div>
+			</div> -->
     </div>
+
+    <div class="vertical-bar">
+			<div class="search-icon">
+				<i class="fa fa-th-list"></i>
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="social-icon">
+				<!-- <a href="https://www.facebook.com/shivanksingh432000/" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/_shivank_singh_/" target="_blank" style="text-decoration: none;"><i class="fa fa-instagram" ></i></a>
+				<a href="https://twitter.com/shivank_4320" target="_blank" style="text-decoration: none;"><i class="fa fa-twitter"></i></a>
+				<i class="fa fa-pinterest-p"></i> -->
+			</div>
+		</div>
+
+
     <div class="container">
       <a href="array1d.html" class="btn1">Array 1D</a>
       <br>
