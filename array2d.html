@@ -17,7 +17,7 @@
             font-family: calibri;
         }
 
-        #d1, #d2, #d3, #d4, #d5, #d6, #d7 {
+        #d1, #d2, #d3, #d4,#d41, #d5, #d6, #d7 {
             margin-left: 150px;
             width: 700px;
             background-color: rgba(0, 0, 0);
@@ -40,20 +40,24 @@
         #d4{
             height: 450px;
         }
+        #d41{
+            height: 650px;
+        }
+
         #d5{
-            height: 450px;
+            height: 750px;
         }
         #d6{
-            height: 450px;
+            height: 750px;
         }
-        #d1 h1, #d2 h1, #d3 h1, #d4 h1, #d5 h1, #d6 h1, #d7 h1{
+        #d1 h1, #d2 h1, #d3 h1, #d4 h1, #d41 h1, #d5 h1, #d6 h1, #d7 h1{
             color: white;
             position: relative;
             left: 40px;
             top: 50px;
         }
 
-        #d1 p, #d2 p, #d3 p, #d4 p, #d5 p, #d6 p, #d7 p {
+        #d1 p, #d2 p, #d3 p, #d4 p,#d41 p, #d5 p, #d6 p, #d7 p {
             color: white;
             position: relative;
             left: 40px;
@@ -62,7 +66,7 @@
             font-size: 17px;
         }
 
-        #d1 li, #d2 li, #d3 li, #d4 li, #d5 li, #d6 li, #d7 li  {
+        #d1 li, #d2 li, #d3 li, #d4 li,#d41 li, #d5 li, #d6 li, #d7 li  {
             position: relative;
             color: white;
             left: 95px;
@@ -159,29 +163,57 @@
     </div><br><br>
     
     <div id="d3">
-        <h1>How to initialize a 2d array in Java?</h1><br><br>
+        <h1>How to initialize a 2D array in Java?</h1><br><br>
         <ul><li>Initialization of 2D array </li>
-        <li>int [ ] [ ] a = { { 1 , 2 , 3 }, { 4 , 5 , 6 , 9 } , { 7 }  } ;</li></ul>
+        <li>int [ ] [ ] arr = { { 1 , 2 , 3 }, { 4 , 5 , 6 , 9 } , { 7 }  } ;</li></ul>
          <br><br><br>
          <img src="images\arr-2d-img\arr2dini.png" alt="2d-array-ini-img"  style="display: block; margin-left: auto; margin-right: auto; width: 400px; height: 200px;">
     </div><br><br>
     
     <div id="d4">
-        <h1>How do we access data in a 2D array?</h1>
-        <p>Elements of 2D arrays can be random accessed. <br>
-            Similar to one dimensional arrays, we can access the individual cells in a 2D array by using the indices of the cells. <br>
-            There are two indices attached to a particular cell, one is its row number while the other is its column number.
+        <h1>How do we access data in a 2D array?</h1><br><br>
+    <ul><li>Elements of 2D arrays can be random accessed. </li>
+        <li>Similar to one dimensional arrays, we can access the individual cells in a 2D array by using the indices of the cells. </li>
+        <li>There are two indices attached to a particular cell, one is its row number while the other is its column number.</li>
+    </ul>
+    <p>However, we can store the value stored in any particular cell of a 2D array to some variable "var" by using the following syntax : </p>
+    <br><br><br><li>int var  =  arr [ i ] [ j ] ;   </li>
+    </div><br><br>
 
-
-        </p>
+    <div id="d41">
+        <h1>Mapping 2D array to 1D array</h1>
+        <p>A 3 X 3 two dimensional array is shown in the following image. However, this array needs to be mapped to a one dimensional array in order to store it into the memory.
+        </p><br><br><br><br>
+        <img src="images/arr-2d-img/colind.png" alt="mat-img"  style="display: block; margin-left: auto; margin-right: auto; width: 300px; height: 180px;">
+        <p>There are two main techniques of storing 2D array elements into memory</p><br><br>
+        <ul>
+            <li>1. Row major ordering</li>
+            <li>2. coloumn major ordering</li>
+        </ul>
+    
     </div><br><br>
     
     <div id="d5">
-        <h1>java Multidimensional Arrays</h1>
-        <p>
-
-
-        </p>
+        <h1>Row-Major Ordering.</h1><br><br>
+        <ul><li>In row major ordering, all the rows of the 2D array are stored into the memory contiguously</li>
+         <br><br>   <img src="images/arr-2d-img/rowmajor.png" alt="row-major"  style="display: block; margin-left: auto; margin-right: auto; width: 600px; height: 50px;">
+        <li>“Row-major order” refers to an ordering of 2D array elements where traversal occurs across each row - from the top left corner to the bottom right</li>
+        <br><br><img src="images/arr-2d-img/rowmajorfor.png" alt="row-major-for"  style="display: block; margin-left: auto; margin-right: auto; width: 350px; height: 120px;">
+        <li>first, the 1st row of the array is stored into the memory completely, then the 2nd row of the array is stored into the memory completely and so on till the last row</li>
+            <br><br><img src="images/arr-2d-img/rowmajormat.png" alt="row-major-mat"  style="display: block; margin-left: auto; margin-right: auto; width: 300px; height: 150px;">
+    </ul>
+    </div>
+    <br>
+    <br>
+    <div id="d6">
+        <h1>Coloumn-Major Ordering.</h1><br><br>
+        <ul><li> In column major ordering, all the columns of the 2D array are stored into the memory contiguously</li>
+         <br><br>   <img src="images/arr-2d-img/colmajor.png" alt="col-major"  style="display: block; margin-left: auto; margin-right: auto; width: 600px; height: 50px;">
+        <li>“Column-major order” refers to an ordering of 2D array elements where traversal occurs down each column - from the top left corner to the bottom right.</li>
+        <br><br><img src="images/arr-2d-img/colmajorfor.png" alt="col-major-for"  style="display: block; margin-left: auto; margin-right: auto; width: 350px; height: 120px;">
+        <li>first, the 1st column of the array is stored into the memory completely, then the 2nd row of the array is stored into the memory completely and so on till the last column of the array.</li>
+            <br><br><img src="images/arr-2d-img/colmajormat.png" alt="col-major-mat"  style="display: block; margin-left: auto; margin-right: auto; width: 300px; height: 150px;">
+    </ul>
     </div>
 
 
