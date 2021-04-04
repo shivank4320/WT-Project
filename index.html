@@ -5,24 +5,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <title>Sidebar Menu with sub-menu  -->
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <style>
-      *{
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-   }
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
 
-   Html, body 
-{
-    max-width: 100%;
-    overflow-x: hidden;
- }
-  
+    Html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     .home {
       height: 100vh;
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(images/javap.jpeg);
@@ -33,123 +31,133 @@
     }
 
 
-    .container{
-  text-align: center;
-  margin-top: 0px;
-  padding-top: 100px;
-  
-  padding-bottom: 50px;
-}
-.btn1, .btn2, .btn3, .btn4{
-text-decoration: none;
-font-weight: 900;
-font-size: 14px;
-/* text-align: center; */
-padding: 12px 25px;
-margin-top: 30px;
-cursor: pointer;
-text-transform: uppercase;
-border-radius: 5px;
-display: inline-block;
-margin-right: 0px;
-margin-left:  800px;
-}
+    .container {
+      text-align: center;
+      margin-top: 0px;
+      padding-top: 100px;
 
-.btn1, .btn3, .btn2, .btn4{
-color: #fff;
-/* background-image: linear-gradient(to right,#4458dc 0%,#854fee 100%);
-border: double 2px transparent;
-box-shadow: 0 10px 30px rgba(118,85,225,.3);  */
-background-image: linear-gradient(to right,#0ae6ee 0%,#000000 100%);
-border: double 2px transparent;
-box-shadow: 0 10px 30px rgba(4, 220, 248, 0.3);
-}
+      padding-bottom: 50px;
+    }
 
-.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover{
-border: 2px solid #44cadc;
-color: #222;
-background-color: #fff;
-background-image: none;
-box-shadow: none;
-}
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4 {
+      text-decoration: none;
+      font-weight: 900;
+      font-size: 14px;
+      /* text-align: center; */
+      padding: 12px 25px;
+      margin-top: 30px;
+      cursor: pointer;
+      text-transform: uppercase;
+      border-radius: 5px;
+      display: inline-block;
+      margin-right: 0px;
+      margin-left: 800px;
+    }
+
+    .btn1,
+    .btn3,
+    .btn2,
+    .btn4 {
+      color: #fff;
+      background-image: linear-gradient(to right, #0ae6ee 0%, #000000 100%);
+      border: double 2px transparent;
+      box-shadow: 0 10px 30px rgba(4, 220, 248, 0.3);
+    }
+
+    .btn1:hover,
+    .btn2:hover,
+    .btn3:hover,
+    .btn4:hover {
+      border: 2px solid #44cadc;
+      color: #222;
+      background-color: #fff;
+      background-image: none;
+      box-shadow: none;
+    }
 
 
 
-.vertical-bar{
-	height: 100%;
-	background: #000;
-	top: 0;
-	left: 0;
-	position: absolute;
+    .vertical-bar {
+      height: 100%;
+      background: #000;
+      top: 0;
+      left: 0;
+      position: absolute;
 
-}
+    }
 
-.search-icon{
-	height: 60%;
-	width: 80px;
-}
+    .search-icon {
+      height: 60%;
+      width: 80px;
+    }
 
-.search-icon .fa{
-	margin: 45px 23px;
-	display: block;
-	color: #fff;
-	font-size: 30px;
-	cursor: pointer;
-}
+    .search-icon .fa {
+      margin: 45px 23px;
+      display: block;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
 
-.social-icon{
-	height: 35%;
-	width: 80px;
-	background: rgb(0, 255, 255);
-	text-align: center;
-	padding-top: 27%;
-	bottom: 0;
-	position: absolute;
-	text-decoration: none;
-}
+    .social-icon {
+      height: 35%;
+      width: 80px;
+      background: rgb(0, 255, 255);
+      text-align: center;
+      padding-top: 27%;
+      bottom: 0;
+      position: absolute;
+      text-decoration: none;
+    }
 
-.social-icon .fa{
-	margin:15px 23px;
-	display: block;
-	padding:8px;
-	border: 1px solid #000;
-	border-radius: 50%;
-	cursor: pointer;
+    .social-icon .fa {
+      margin: 15px 23px;
+      display: block;
+      padding: 8px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      cursor: pointer;
 
-}
-.nav-logo{
-  margin-left: 30px;
-  margin-top: 10px;
-}
+    }
+
+    .nav-logo {
+      margin-left: 30px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
 <body>
   <div class="home">
     <div class="nav-bar">
-			<div class="nav-logo">
-				<img src="images\kiit11.png" style="display: block; margin-left: 50px; margin-right: auto; width: 350px; height: 45px;">
-			</div>
+      <div class="nav-logo">
+        <img src="images\kiit11.png"
+          style="display: block; margin-left: 50px; margin-right: auto; width: 350px; height: 45px;">
+      </div>
     </div>
 
     <div class="vertical-bar">
-			<div class="search-icon">
-				<i class="fa fa-th-list"></i>
-        <a href="https://kiit.ac.in/" target="_blank" style="text-decoration: none;"><i class="fa fa-university"></i></a>
-        <a href="about.html" target="_blank" style="text-decoration: none;"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-				<!-- <i class="fa fa-search"></i> -->
-        
-			</div>
-			<div class="social-icon">
-        <a href="https://shivank4320.github.io/WT-Project/index.html" target="_blank" style="text-decoration: none;"><i class="fas fa-globe"></i></a><br><br>
-        
-        <a href="https://github.com/shivank4320/WT-Project" target="_blank" style="text-decoration: none;"><i class="fab fa-github"></i></a>
-				<!-- <a href="https://www.facebook.com/shivanksingh432000/" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook"></i></a>
-				<a href="https://www.instagram.com/_shivank_singh_/" target="_blank" style="text-decoration: none;"><i class="fa fa-instagram" ></i></a>
-				<a href="https://twitter.com/shivank_4320" target="_blank" style="text-decoration: none;"><i class="fa fa-twitter"></i></a>
-				<i class="fa fa-pinterest-p"></i> -->
-			</div>
-		</div>
+      <div class="search-icon">
+        <i class="fa fa-th-list"></i>
+        <a href="https://kiit.ac.in/" target="_blank" style="text-decoration: none;"><i
+            class="fa fa-university"></i></a>
+        <a href="about.html" target="_blank" style="text-decoration: none;"><i class="fa fa-info-circle"
+            aria-hidden="true"></i></a>
+        <!-- <i class="fa fa-search"></i> -->
+
+      </div>
+      <div class="social-icon">
+        <a href="https://shivank4320.github.io/WT-Project/index.html" target="_blank" style="text-decoration: none;"><i
+            class="fas fa-globe"></i></a><br><br>
+
+        <a href="https://github.com/shivank4320/WT-Project" target="_blank" style="text-decoration: none;"><i
+            class="fab fa-github"></i></a>
+
+      </div>
+    </div>
 
 
     <div class="container">
@@ -160,85 +168,15 @@ box-shadow: none;
       <a href="scanner-input.html" class="btn3">Input (Scanner)</a>
       <br>
       <a href="command-input.html" class="btn4">Input (Command Line)</a>
-    </div>
+    </div><br>
+    <hr>
+    <footer class="footer">
+      <p>© Copyright 2020-2021 WT-Project (group 7). All rights reserved. Developed by group 7.</p>
+    </footer>
 
   </div>
-  <!-- <img src="images\javahome.webp" alt=""> -->
-  <!-- <header> -->
-
-  <!-- <div class="btn">
-      <span class="fas fa-bars"></span>
-    </div> -->
-  <!-- <nav class="sidebar">
-      <div class="text">
-        JAVA</div>
-      <ul>
-        <li class="active"><a href="#">Dashboard</a></li>
-        <li>
-          <a href="#" class="arr-btn">Arrays
-            <span class="fas fa-caret-down first"></span>
-          </a>
-          <ul class="arr-show">
-            <li><a href="array1d.html">1-D Array</a></li>
-            <li><a href="array2d.html">2-D Array</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#" class="inp-btn">Input
-            <span class="fas fa-caret-down second"></span>
-          </a>
-          <ul class="inp-show">
-            <li><a href="command-input.html">Command-line</a></li>
-            <li><a href="scanner-input.html">Scanner-Class</a></li>
-          </ul>
-        </li>
-  </header> -->
-  <!-- <li><a href="#">Portfolio</a></li>
-<li><a href="#">Overview</a></li>
-<li><a href="#">Shortcuts</a></li>
-<li><a href="#">Feedback</a></li> -->
   </ul>
   </nav>
-  <!-- <script>
-    // $('.btn').click(function(){
-    //   $(this).toggleClass("click");
-    //   $('.sidebar').toggleClass("show");
-    // });
-    $('.arr-btn').click(function () {
-      $('nav ul .arr-show').toggleClass("show");
-      $('nav ul .first').toggleClass("rotate");
-    });
-    $('.inp-btn').click(function () {
-      $('nav ul .inp-show').toggleClass("show1");
-      $('nav ul .second').toggleClass("rotate");
-    });
-    $('nav ul li').click(function () {
-      $(this).addClass("active").siblings().removeClass("active");
-    });
-  </script> -->
-
-
-
-  <main>
-    <!-- <h3>Hello</h3>
-          <h1> i am Shivank Singh</h1>
-          <h2>web developer</h2> -->
-
-
-    <!-- <div class="content">
-            <div class="header">WT-Project</div>
-            <p>KiiT University</p>
-          </div> -->
-
-    <!-- button   starts.......................................................... -->
-    
-    <!-- button ends.............................................. -->
-
-    <!-- </div>
-          <a href="#" class="btn1">About</a>
-          <a href="#" class="btn2">Home</a>
-        </div> -->
-  </main>
 </body>
 
 </html>

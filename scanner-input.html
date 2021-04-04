@@ -17,7 +17,13 @@
             font-family: calibri;
         }
 
-        #d1, #d2, #d3, #d4, #d5, #d6 , #d44{
+        #d1,
+        #d2,
+        #d3,
+        #d4,
+        #d44,
+        #d5,
+        #d6 {            
             margin-left: 150px;
             width: 700px;
             background-color: rgba(0, 0, 0);
@@ -28,38 +34,55 @@
             top: 100px;
             left: 350px;
         }
-        #d1{
+
+        #d1 {
             height: 300px;
         }
-        #d2{
+
+        #d2 {
             height: 460px;
         }
-        #d3{
+
+        #d3 {
             height: 400px;
         }
 
-        #d4{
+        #d4 {
             height: 450px;
         }
 
-        #d44{
+        #d44 {
             height: 400px;
         }
-        #d5{
+
+        #d5 {
             height: 550px;
         }
-        #d6{
+
+        #d6 {
             height: 415px;
         }
 
-        #d1 h1, #d2 h1, #d3 h1, #d4 h1, #d44 h1, #d5 h1, #d6 h1 {
+        #d1 h1,
+        #d2 h1,
+        #d3 h1,
+        #d4 h1,
+        #d44 h1,
+        #d5 h1,
+        #d6 h1 {
             color: white;
             position: relative;
             left: 40px;
             top: 50px;
         }
 
-        #d1 p, #d2 p, #d3 p, #d4 p,#d44 p,  #d5 p, #d6 p {
+        #d1 p,
+        #d2 p,
+        #d3 p,
+        #d4 p,
+        #d44 p,
+        #d5 p,
+        #d6 p {
             color: white;
             position: relative;
             left: 40px;
@@ -68,7 +91,13 @@
             font-size: 16px;
         }
 
-        #d1 li, #d2 li, #d3 li, #d4 li,#d44 li, #d5 li, #d6 li {
+        #d1 li,
+        #d2 li,
+        #d3 li,
+        #d4 li,
+        #d44 li,
+        #d5 li,
+        #d6 li {
             position: relative;
             color: white;
             left: 95px;
@@ -81,10 +110,6 @@
 
 <body>
     <header>
-
-        <!-- <div class="btn">
-      <span class="fas fa-bars"></span>
-    </div> -->
         <nav class="sidebar">
             <div class="text">
                 JAVA</div>
@@ -110,17 +135,9 @@
                     </ul>
                 </li>
     </header>
-    <!-- <li><a href="#">Portfolio</a></li>
-<li><a href="#">Overview</a></li>
-<li><a href="#">Shortcuts</a></li>
-<li><a href="#">Feedback</a></li> -->
     </ul>
     </nav>
     <script>
-        // $('.btn').click(function(){
-        //   $(this).toggleClass("click");
-        //   $('.sidebar').toggleClass("show");
-        // });
         $('.arr-btn').click(function () {
             $('nav ul .arr-show').toggleClass("show");
             $('nav ul .first').toggleClass("rotate");
@@ -151,15 +168,16 @@
         <h1>Scanner Class in Java</h1>
         <p> The main purpose of the Scanner class is to parse primitive types and strings using regular expressions.<br>
             Scanner class in Java is found in the java.util package.<br><br>
-            
-            Java provides various ways to read input from the keyboard, the java.util.Scanner class is one of them.<br><br>
+
+            Java provides various ways to read input from the keyboard, the java.util.Scanner class is one of
+            them.<br><br>
             The Java Scanner class breaks the input into tokens using a delimiter which is whitespace by default.
             It provides many methods to read and parse various primitive values
             </ul> <br><br><br>
-            <ul>
-                <li>Convenient methods for parsing primitives (nextInt(), nextFloat(), …) from the tokenized input.
-                <li>Regular expressions can be used to find tokens.</li><br><br>
-                </ul>
+        <ul>
+            <li>Convenient methods for parsing primitives (nextInt(), nextFloat(), …) from the tokenized input.
+            <li>Regular expressions can be used to find tokens.</li><br><br>
+        </ul>
         </p>
     </div>
     <br>
@@ -169,10 +187,13 @@
         <h1>Import Scanner Class</h1>
         <p>As we can see from the above example, we need to import the java.util.<br>
             Scanner package before we can use the Scanner class.<br><br><br>
-            <ul>
-                <li><pre>import java . util . Scanner ;</pre></li>
-            </ul><br><br>
-            <img src="images\sc-input-img\scannerpkg.jpg" alt="scanner-pkg" style="display: block; margin-left: 90px; margin-right: auto;"><br><br>
+        <ul>
+            <li>
+                <pre>import java . util . Scanner ;</pre>
+            </li>
+        </ul><br><br>
+        <img src="images\sc-input-img\scannerpkg.jpg" alt="scanner-pkg"
+            style="display: block; margin-left: 90px; margin-right: auto;"><br><br>
         </p>
     </div>
     <br>
@@ -181,14 +202,21 @@
     <div id="d4">
         <h1>Create a Scanner class object</h1><br><br>
         <p>
-            <ul>
-                <li><pre>Scanner  sc  =  new  Scanner ( InputStream  input ) ;       <small><i>// read input from the input stream </i></small></pre></li><br>
-                
-                <li><pre>Scanner  sc  =  new  Scanner ( File  file ) ;          <small><i>// read input from files </i></small></pre> </li><br>     
-                    
-                <li> <pre>Scanner  sc  =  new  Scanner ( String  str ) ;          <small><i> // read input from a string</i></small></pre></li><br>
-            </ul><br><br>
-            <img src="images\sc-input-img\scannerimg.jpg" alt="scanner-object-creating" style="display: block; margin-left: 90px; margin-right: auto;">
+        <ul>
+            <li>
+                <pre>Scanner  sc  =  new  Scanner ( InputStream  input ) ;       <small><i>// read input from the input stream </i></small></pre>
+            </li><br>
+
+            <li>
+                <pre>Scanner  sc  =  new  Scanner ( File  file ) ;          <small><i>// read input from files </i></small></pre>
+            </li><br>
+
+            <li>
+                <pre>Scanner  sc  =  new  Scanner ( String  str ) ;          <small><i> // read input from a string</i></small></pre>
+            </li><br>
+        </ul><br><br>
+        <img src="images\sc-input-img\scannerimg.jpg" alt="scanner-object-creating"
+            style="display: block; margin-left: 90px; margin-right: auto;">
         </p>
     </div>
     <br>
@@ -197,7 +225,8 @@
     <div id="d44">
         <h1>Scanner Class Constructors</h1>
         <p>
-            <img src="images\sc-input-img\scannerconst.png" alt="scanner class constructors" style="display: block; margin-left: -15px; margin-right: auto;">
+            <img src="images\sc-input-img\scannerconst.png" alt="scanner class constructors"
+                style="display: block; margin-left: -15px; margin-right: auto;">
         </p>
     </div>
     <br>
@@ -206,58 +235,36 @@
     <div id="d5">
         <h1>Java Scanner Methods</h1><br><br>
         <p>The Scanner class provides various methods that allow us to read inputs of different types.<br>
-        <br>
-        <img src="images\sc-input-img\scmethods.png" alt="scanner methods images" style="display: block; margin-left: auto; margin-right: auto;"></p>
+            <br>
+            <img src="images\sc-input-img\scmethods.png" alt="scanner methods images"
+                style="display: block; margin-left: auto; margin-right: auto;">
+        </p>
     </div>
     <br>
     <br>
 
-    
+
     <div id="d6">
         <h1>Working of java Scanner</h1>
         <p>The Scanner class reads an entire line and divides the line into tokens.<br>
             Tokens are small elements that have some meaning to the Java compiler.
             For example : <br><br>
             Suppose there is an input string : <br><br><br>
-            <ul>
-           <li>He is 22 </li></ul>
+        <ul>
+            <li>He is 22 </li>
+        </ul>
         </p>
         <p> In this case, the scanner object will read the entire line and divides the string into tokens:
-             "He", "is" and "22". The object then iterates over each token and reads each token
-              using its different methods . <br>
-              <br><br>
-              <ul style="list-style-type: none;">
-              <li ><bold>note : </bold> By default, whitespace is used to divide tokens.</li>
-                </ul>
-            </p></div>
-    <main>
-        <!-- <h3>Hello</h3>
-          <h1> i am Shivank Singh</h1>
-          <h2>web developer</h2> -->
-
-
-        <!-- <div class="content">
-            <div class="header">WT-Project</div>
-            <p>KiiT University</p>
-          </div> -->
-
-        <!-- button   starts.......................................................... -->
-        <!-- <div class="container">
-            <a href="#" class="btn1">Array 1D</a>
-            <br>
-            <a href="#" class="btn2">Array 2D</a>
-            <br>
-            <a href="#" class="btn3">Input (Scanner)</a>
-            <br>
-            <a href="#" class="btn4">Input (Command Line)</a>
-          </div>
-          button ends.............................................. -->
-
-        <!-- </div>
-          <a href="#" class="btn1">About</a>
-          <a href="#" class="btn2">Home</a>
-        </div> -->
-    </main>
+            "He", "is" and "22". The object then iterates over each token and reads each token
+            using its different methods . <br>
+            <br><br>
+        <ul style="list-style-type: none;">
+            <li>
+                <bold>note : </bold> By default, whitespace is used to divide tokens.
+            </li>
+        </ul>
+        </p>
+    </div>
 </body>
 
 </html>

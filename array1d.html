@@ -17,10 +17,15 @@
       font-family: calibri;
     }
 
-    #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8 {
+    #d1,
+    #d2,
+    #d3,
+    #d4,
+    #d5,
+    #d6,
+    #d7,
+    #d8 {
       margin-left: 150px;
-      /* padding-top: 50px; */
-      /* margin-top: 50px; */
       width: 700px;
       background-color: rgba(0, 0, 0);
       opacity: 1;
@@ -30,7 +35,8 @@
       top: 50px;
       left: 230px;
     }
-    #d1{
+
+    #d1 {
       width: 850px;
       height: 750px;
     }
@@ -41,7 +47,7 @@
 
     #d3 {
       height: 190px;
-     }
+    }
 
     #d4 {
       height: 420px;
@@ -69,7 +75,8 @@
     #d4 h1,
     #d5 h1,
     #d6 h1,
-    #d7 h1 , #d8 h1{
+    #d7 h1,
+    #d8 h1 {
       /* margin-top: 50px; */
       color: white;
       position: relative;
@@ -83,7 +90,8 @@
     #d4 p,
     #d5 p,
     #d6 p,
-    #d7 p, #d8 p {
+    #d7 p,
+    #d8 p {
       color: white;
       position: relative;
       left: 40px;
@@ -98,7 +106,8 @@
     #d4 li,
     #d5 li,
     #d6 li,
-    #d7 li, #d8 li{
+    #d7 li,
+    #d8 li {
       position: relative;
       color: white;
       padding-top: 11px;
@@ -112,15 +121,11 @@
 
 <body>
   <header>
-
-    <!-- <div class="btn">
-      <span class="fas fa-bars"></span>
-    </div> -->
     <nav class="sidebar">
       <div class="text">
         JAVA</div>
       <ul>
-        <!-- <li class="active"><a href="#">Dashboard</a></li> -->
+
         <li class="active"><a href="index.html">Home</a></li>
         <li>
           <a href="#" class="arr-btn">Arrays
@@ -140,18 +145,11 @@
             <li><a href="scanner-input.html">Scanner-Class</a></li>
           </ul>
         </li>
+        <li class="active"><a href="about.html">About</a></li>
   </header>
-  <!-- <li><a href="#">Portfolio</a></li>
-<li><a href="#">Overview</a></li>
-<li><a href="#">Shortcuts</a></li>
-<li><a href="#">Feedback</a></li> -->
   </ul>
   </nav>
   <script>
-    // $('.btn').click(function(){
-    //   $(this).toggleClass("click");
-    //   $('.sidebar').toggleClass("show");
-    // });
     $('.arr-btn').click(function () {
       $('nav ul .arr-show').toggleClass("show");
       $('nav ul .first').toggleClass("rotate");
@@ -184,16 +182,6 @@
         class is a class created by JVM at run time. We can get the name of the proxy
         class of an array by using getClass().getName() method. </li>
       <li>Every array type implements the interfaces Cloneable and java.io.Serializable.</li>
-      <!-- <li>Array is the collection of similar type of data having contiguous
-        memory location. </li>
-      <li>Due to contiguous memory location the performance becomes
-        fast. </li>
-      <li>The biggest disadvantage of array is, we can’t increase or
-        decrease its size after defining it. </li>
-      <li>Array is represented by an object</li>
-      <li>Array is the reference variable of proxy class. The proxy
-        class is a class created by JVM at run time. We can get the name of the proxy
-        class of an array by using getClass().getName() method. </li> -->
     </ul>
 
     </p>
@@ -251,12 +239,12 @@
     <h1>how many elements can array hold?</h1>
     <p>
       Array is created or instantiated using new keyword.<br>
-      When an array is declared, only a reference of array is created.<br> 
+      When an array is declared, only a reference of array is created.<br>
       To actually create or allocate memory to array : <br>
       <br><br>
     <ul>
       <li>
-        array_name  =  new  data_type [ size ] ;
+        array_name = new data_type [ size ] ;
       </li>
     </ul>
     </p>
@@ -284,67 +272,38 @@
       int [] arr = { 40, 55, 63, 17, 22, 68, 89, 97, 89 } ;<br><br>
       <img src="images\arr-1d-img\arrdec.jpeg" alt="arr-image"><br>
       note : <br><br>
-      <ul>
-        <li>Array indices always start from 0. That is, the first element of an array is at index 0.</li>
-        <li>If the size of an array is n, then the last element of the array will be at index n-1.</li>
-      </ul>
+    <ul>
+      <li>Array indices always start from 0. That is, the first element of an array is at index 0.</li>
+      <li>If the size of an array is n, then the last element of the array will be at index n-1.</li>
+    </ul>
     </p>
   </div>
   <br>
   <br>
 
 
-<div id="d8">
-  <h1>Access Elements of an Array in Java. </h1>
-  <p>
-    We can access the element of an array using the index number <br><br><br>
+  <div id="d8">
+    <h1>Access Elements of an Array in Java. </h1>
+    <p>
+      We can access the element of an array using the index number <br><br><br>
     <ul>
       <li>
-        <pre>array_name [ index ]         <small>// access array elements</small></pre></li>
-    </ul> 
-  </p>
-</div>
-<br>
-<br>
+        <pre>array_name [ index ]         <small>// access array elements</small></pre>
+      </li>
+    </ul>
+    </p>
+  </div>
+  <br>
+  <br>
 
-<div id="d7">
-  <h1>Typical array processing codes </h1>
-  <p>
-    <img src="images\arr-1d-img\arraycodes2.jpeg" alt="typical array processing codes">
-  </p>
-</div>
-<br>
-<br>
-
-
-  <main>
-    <!-- <h3>Hello</h3>
-          <h1> i am Shivank Singh</h1>
-          <h2>web developer</h2> -->
-
-
-    <!-- <div class="content">
-            <div class="header">WT-Project</div>
-            <p>KiiT University</p>
-          </div> -->
-
-    <!-- button   starts.......................................................... -->
-    <!-- <div class="container">
-            <a href="#" class="btn1">Array 1D</a>
-            <br>
-            <a href="#" class="btn2">Array 2D</a>
-            <br>
-            <a href="#" class="btn3">Input (Scanner)</a>
-            <br>
-            <a href="#" class="btn4">Input (Command Line)</a>
-          </div>
-          button ends.............................................. -->
-
-    <!-- </div>
-          <a href="#" class="btn1">About</a>
-          <a href="#" class="btn2">Home</a>
-        </div> -->
-  </main>
+  <div id="d7">
+    <h1>Typical array processing codes </h1>
+    <p>
+      <img src="images\arr-1d-img\arraycodes2.jpeg" alt="typical array processing codes">
+    </p>
+  </div>
+  <br>
+  <br>
 </body>
 
 </html>

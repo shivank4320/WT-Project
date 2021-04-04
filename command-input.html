@@ -17,7 +17,14 @@
             font-family: calibri;
         }
 
-        #d1, #d2, #d3, #d3, #d4, #d5 , #d6, #d7{
+        #d1,
+        #d2,
+        #d3,
+        #d3,
+        #d4,
+        #d5,
+        #d6,
+        #d7 {
             margin-left: 150px;
             width: 700px;
             /* height: 450px; */
@@ -29,24 +36,39 @@
             top: 100px;
             left: 350px;
         }
-        #d1{
+
+        #d1 {
             height: 240px;
         }
-        #d2{
+
+        #d2 {
             height: 1430px;
         }
-        #d3{
+
+        #d3 {
             height: 1200px;
         }
 
-        #d1 h1, #d2 h1, #d3 h1, #d4 h1, #d5 h1, #d6 h1, #d7 h1 {
+        #d1 h1,
+        #d2 h1,
+        #d3 h1,
+        #d4 h1,
+        #d5 h1,
+        #d6 h1,
+        #d7 h1 {
             color: white;
             position: relative;
             left: 40px;
             top: 50px;
         }
 
-        #d1 p, #d2 p, #d3 p, #d4 p, #d5 p, #d6 p, #d7 p {
+        #d1 p,
+        #d2 p,
+        #d3 p,
+        #d4 p,
+        #d5 p,
+        #d6 p,
+        #d7 p {
             color: white;
             position: relative;
             left: 40px;
@@ -55,7 +77,13 @@
             font-size: 18px;
         }
 
-        #d1 li, #d2 li, #d3 li, #d4 li, #d5 li, #d6 li, #d7 li {
+        #d1 li,
+        #d2 li,
+        #d3 li,
+        #d4 li,
+        #d5 li,
+        #d6 li,
+        #d7 li {
             position: relative;
             color: white;
             left: 90px;
@@ -68,10 +96,6 @@
 
 <body>
     <header>
-
-        <!-- <div class="btn">
-      <span class="fas fa-bars"></span>
-    </div> -->
         <nav class="sidebar">
             <div class="text">
                 JAVA</div>
@@ -95,18 +119,12 @@
                         <li><a href="scanner-input.html">Scanner-Class</a></li>
                     </ul>
                 </li>
+                <li class="active"><a href="about.html">About</a></li>
+
     </header>
-    <!-- <li><a href="#">Portfolio</a></li>
-<li><a href="#">Overview</a></li>
-<li><a href="#">Shortcuts</a></li>
-<li><a href="#">Feedback</a></li> -->
     </ul>
     </nav>
     <script>
-        // $('.btn').click(function(){
-        //   $(this).toggleClass("click");
-        //   $('.sidebar').toggleClass("show");
-        // });
         $('.arr-btn').click(function () {
             $('nav ul .arr-show').toggleClass("show");
             $('nav ul .first').toggleClass("rotate");
@@ -123,140 +141,98 @@
     <!-- content................................................. -->
     <div id="d1">
         <h1>Java Command Line Arguments</h1><br>
-        <ul><li>The command-line arguments in Java allow us to pass arguments during the execution of the program
-        </li>
-        <li>The arguments passed from the console can be received in the java program and it can be used as an input.</li>
-    </ul>
+        <ul>
+            <li>The command-line arguments in Java allow us to pass arguments during the execution of the program
+            </li>
+            <li>The arguments passed from the console can be received in the java program and it can be used as an
+                input.</li>
+        </ul>
     </div>
     <br>
     <br>
 
 
-<div id="d2">
+    <div id="d2">
         <h1>Command Line Arguments in Java: Important Points</h1> <br>
         <ul>
-            <li>Command Line Arguments can be used to specify configuration information while launching your application.</li>
-            <li>There is no restriction on the number of java command line arguments.You can specify any number of arguments</li>
+            <li>Command Line Arguments can be used to specify configuration information while launching your
+                application.</li>
+            <li>There is no restriction on the number of java command line arguments.You can specify any number of
+                arguments</li>
             <li>Information is passed as String</li>
             <li>They are captured into the String args of your main method</li>
-        </ul><br><br><br> 
+        </ul><br><br><br>
         <ul>
-            <li><img src="images\cmd-line-img\cmdline.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 450px; height: 170px;"></li><br>
+            <li><img src="images\cmd-line-img\cmdline.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 450px; height: 170px;"></li>
+            <br>
             <li>Let's try to run this program using the command line.</li><br>
-            <li><img src="images\cmd-line-img\cmdlinecomp.png" alt="cmd-line-compile-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 70px;"></li><br>
-            <li><img src="images\cmd-line-img\cmdlinerun.png" alt="cmd-line-run-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 70px;"></li> <br>
+            <li><img src="images\cmd-line-img\cmdlinecomp.png" alt="cmd-line-compile-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 70px;"></li>
+            <br>
+            <li><img src="images\cmd-line-img\cmdlinerun.png" alt="cmd-line-run-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 70px;"></li>
+            <br>
             <li>while running the program, we can pass the arguments after the class name. For example :</li> <br>
-            <li><img src="images\cmd-line-img\cmdlineargs.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 50px;"></li> <br>
-             <li>apple, ball, and cat are arguments passed to the program through the command line. Now, we will get the following output.</li> <br>
-            <li><img src="images\cmd-line-img\cmdlineout.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 90px;"></li><br><br>
-            <li>In the above program, the main() method includes an array of strings named args as its parameter.</li>   <br>
-            <li><img src="images\cmd-line-img\main.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 45px;"></li>
+            <li><img src="images\cmd-line-img\cmdlineargs.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 50px;"></li>
+            <br>
+            <li>apple, ball, and cat are arguments passed to the program through the command line. Now, we will get the
+                following output.</li> <br>
+            <li><img src="images\cmd-line-img\cmdlineout.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 90px;"></li>
+            <br><br>
+            <li>In the above program, the main() method includes an array of strings named args as its parameter.</li>
+            <br>
+            <li><img src="images\cmd-line-img\main.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 45px;"></li>
         </ul> <br>
         <p>note : </p><br>
-        <ul><li>Arguments are always stored as strings and always separated by white-space</li></ul>
+        <ul>
+            <li>Arguments are always stored as strings and always separated by white-space</li>
+        </ul>
     </div>
     <br>
     <br>
 
-    
+
     <div id="d3">
         <h1>Passing Numeric Command-Line Arguments</h1><br>
         <ul>
-            <li>The main() method of every Java program only accepts string arguments. Hence it is not possible to pass numeric arguments through the command line.</li>
-        <br><li>However, we can later convert string arguments into numeric values</li> </ul><br>
+            <li>The main() method of every Java program only accepts string arguments. Hence it is not possible to pass
+                numeric arguments through the command line.</li>
+            <br>
+            <li>However, we can later convert string arguments into numeric values</li>
+        </ul><br>
 
         <ul>
-            <li><img src="images\cmd-line-img\numcmdline.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 450px; height: 170px;"></li> <br><br>
+            <li><img src="images\cmd-line-img\numcmdline.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 450px; height: 170px;"></li>
+            <br><br>
             <li> run the program through the command line.</li> <br>
-            <li><img src="images\cmd-line-img\numcmdlinerun.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 90px;"></li> <br> <br>
+            <li><img src="images\cmd-line-img\numcmdlinerun.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 90px;"></li>
+            <br> <br>
             <li>11 and 23 are command-line arguments. Now, we will get the following output.</li> <br>
-            <li><img src="images\cmd-line-img\numcmdlineout.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 65px;"></li> <br> <br>
+            <li><img src="images\cmd-line-img\numcmdlineout.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 65px;"></li>
+            <br> <br>
             <li>notice the line .</li> <br>
-             <li><img src="images\cmd-line-img\numcmdlineextra.png" alt="cmd-line-image"  style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 45px;"></li><br>
+            <li><img src="images\cmd-line-img\numcmdlineextra.png" alt="cmd-line-image"
+                    style="display: block; margin-left: -30px; margin-right: auto; width: 550px; height: 45px;"></li>
+            <br>
             <li>the parseInt() method of the Integer class converts the string argument into an integer.</li>
-        <li>Similarly, we can use the parseDouble() and parseFloat() method to convert the string into double and float respectively.</li>    
+            <li>Similarly, we can use the parseDouble() and parseFloat() method to convert the string into double and
+                float respectively.</li>
         </ul>
         <p>note : </p><br>
-        <ul><li>If the arguments cannot be converted into the specified numeric value then an exception named NumberFormatException occurs.</li></ul>
+        <ul>
+            <li>If the arguments cannot be converted into the specified numeric value then an exception named
+                NumberFormatException occurs.</li>
+        </ul>
     </div>
     <br>
     <br>
-
-    
-    <!-- <div id="d4">
-        <h1>Taking Input in java</h1><br>
-        <p>
-            Input throgh Command-Line
-
-        </p>
-    </div>
-    <br>
-    <br>
-
-    
-    <div id="d5">
-        <h1>Taking Input in java</h1><br>
-        <p>
-            Input throgh Command-Line
-
-        </p>
-    </div>
-    <br>
-    <br>
-
-    
-    <div id="d6">
-        <h1>Taking Input in java</h1><br>
-        <p>
-            Input throgh Command-Line
-
-        </p>
-    </div>
-    <br>
-    <br>
-
-    
-    <div id="d7">
-        <h1>Taking Input in java</h1><br>
-        <p>
-            Input throgh Command-Line
-
-        </p>
-    </div>
-    <br>
-    <br> -->
-
-    
-
-
-    <main>
-        <!-- <h3>Hello</h3>
-          <h1> i am Shivank Singh</h1>
-          <h2>web developer</h2> -->
-
-
-        <!-- <div class="content">
-            <div class="header">WT-Project</div>
-            <p>KiiT University</p>
-          </div> -->
-
-        <!-- button   starts.......................................................... -->
-        <!-- <div class="container">
-            <a href="#" class="btn1">Array 1D</a>
-            <br>
-            <a href="#" class="btn2">Array 2D</a>
-            <br>
-            <a href="#" class="btn3">Input (Scanner)</a>
-            <br>
-            <a href="#" class="btn4">Input (Command Line)</a>
-          </div>
-          button ends.............................................. -->
-
-        <!-- </div>
-          <a href="#" class="btn1">About</a>
-          <a href="#" class="btn2">Home</a>
-        </div> -->
-    </main>
 </body>
 
 </html>
